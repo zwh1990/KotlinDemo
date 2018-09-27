@@ -16,7 +16,18 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.bt_grammar).setOnClickListener {
             startActivity(Intent(this, GrammarActivity::class.java))
-            finish()
+        }
+
+        findViewById<Button>(R.id.bt_data_type).setOnClickListener {
+            startActivity(Intent(this, DataTypeActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.bt_if_control).setOnClickListener {
+            startActivity(Intent(this, IfControlActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.bt_for).setOnClickListener {
+            startActivity(Intent(this, ForActivity::class.java))
         }
 
     }
